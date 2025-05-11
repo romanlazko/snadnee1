@@ -27,7 +27,7 @@ class User extends Authenticatable
     protected static function booted(): void
     {
         static::created(function (User $user) {
-            $user->roles()->attach('user');
+            $user->assignRole('user');
         });
         
         static::deleting(function (User $user) {
