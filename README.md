@@ -16,6 +16,8 @@ git clone https://github.com/romanlazko/snadnee1.git
 ```bash
 cd snadnee1
 composer install
+npm install
+npm run dev
 ```
 
 3. Vytvořte kopii `.env.example` jako `.env`:
